@@ -29,7 +29,7 @@ function displayProducts(products) {
             <h3>${product.name}</h3>
             <p class="product-description" id="desc-${product.id}">${truncateDescription(product.description)}</p>
             <p style="color: #ce2c32; font-weight: 700">Price: PHP ${product.price}</p>
-            <label for="quantity-${product.id}">Quantity: <input type="number" id="quantity-${product.id}" name="quantity" value="${product.quantity}" min="1" style="width: 50px;"> <button onclick="addToCart(${product.id})">Add to Cart</button> </label>  
+            <label for="quantity-${product.id}">Quantity: <input type="number" id="quantity-${product.id}" name="quantity" value="${product.quantity}" min="0" style="width: 50px;"> <button onclick="addToCart(${product.id})">Add to Cart</button> </label>  
            
             <br>
             
