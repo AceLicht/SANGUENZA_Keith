@@ -560,4 +560,106 @@ button:hover {
     }
 }
 
+.b-container {
+    max-width: 600px;
+    padding-top: 30px;
+    font-size: 30px;
+    font-weight: bold;
+    color: white;
+    text-shadow: 2px 2px 4px red;
+    }
+    
+    .b-content {
+    max-width: 600px;
+    padding-top: 30px;
+    font-size: 30px;
+    color: white;
+    margin: 0 auto;
+    text-shadow: 2px 2px 4px red;
+    }
 
+    .header-menu-btn {
+        text-align: center;
+        background-color: #000;
+        color: #fff;
+        font-size: 20px;
+        font-weight: 600;
+        padding: 10px 0;
+        padding-top: 20px;
+        border: none;
+        cursor: pointer;
+        width: 100%;
+        margin-bottom: 10px;
+        padding-left: 10px;
+        display: block;
+        text-shadow: 2px 2px 4px red;
+      }
+      
+      .header-menu-items {
+        display: none;
+        background-color: #000;
+        z-index: 1;
+        max-width: 100%;
+        overflow-wrap: break-word;
+        font-weight: 900;
+        padding: 10px;
+        border: 0px solid #ccc;
+        border-radius: 5px;
+        animation-name: dropdown-animation;
+        animation-duration: 1s;
+        animation-timing-function: ease-out;
+        animation-fill-mode: forwards;
+        background-image: url('SANGUENZA_LOGO.png');
+        background-size: 40% 100%;
+        background-repeat: no-repeat;
+        background-position: center; 
+        background-attachment: fixed;
+        opacity: 0.2;
+      }
+
+      #toggle-menu {
+        display: none;
+      }
+      
+      #toggle-menu:checked ~ .header-menu-items {
+        display: block;
+      }
+      
+      #toggle-menu ~ label .hide {
+        display: none;
+      }
+      
+      #toggle-menu:checked ~ label .show {
+        display: none;
+      }
+      
+      #toggle-menu:checked ~ label .hide {
+        display: inline;
+      }
+      
+      
+      @keyframes dropdown-animation {
+        from {
+          opacity: 0;
+          transform: translateY(-10px);
+        }
+        to {
+          opacity: 1;
+          transform: translateY(0);
+        }
+      }
+      
+      footer {
+        background-color: #000;
+        color: #fff;
+        padding: 1px;
+        text-align: center;
+        position: relative;
+        bottom: 0;
+        width: 99.9%;
+        text-shadow: 2px 2px 4px red;
+      }
+      iframe {
+          margin: 0 auto;
+          display: block;
+      }
